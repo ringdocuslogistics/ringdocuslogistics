@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Ringdocus Logistics - Your Trusted Partner in Trucking Excellence. Nationwide coverage, dedicated fleet, experienced team.">
+    <title>Ringdocus Logistics - Services</title>
+    <link rel="canonical" href="https://ringdocuslogistics.com" />
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="icon" href="./Images/favicon.ico" type="image/x-icon">
+	<link rel="preload" href="./Images/top-image.webp" as="image">
+    <link rel="preconnect" href="https://maps.googleapis.com">
+</head>
+<body>
+<header>
+	<a id="Logo-Link" href="#" style="position: relative; display: inline-block; height: 110px; width: 300px;">
+    <img class="Logo logo-light" src="./Images/RingdocusLogo2.png" alt="Ringdocus Logo">
+    <img class="Logo logo-dark" src="./Images/RingdocusLogo2-White.png" alt="Ringdocus Logo">
+</a>
+	<nav aria-label="Main navigation">
+	<ul id="Pannel">
+		<li><a href="./Home.html" data-i18n="home">Home</a></li>
+		<li><a href="./Services.html" data-i18n="services">Services</a></li>
+		<li><a href="./About-Us.html" data-i18n="about">About Us</a></li>
+		<li><a href="./Career.html" data-i18n="career">Career</a></li>
+		<li><a href="./Contact-Us.html" data-i18n="contact">Contact Us</a></li>
+		<li><a href="./Quote.html" id="quote-btn" data-i18n="cta">Get a Quote!</a></li>
+			<li id="theme-toggle-item">
+    <button id="theme-toggle" aria-label="Toggle dark mode">
+        <i class="fa fa-moon-o"></i>
+    </button>
+</li>
+ 	<!-- Languages -->
+<li id="language-dropdown-item">
+    <div id="language-dropdown" class="language-dropdown">
+        <button id="language-toggle" class="language-toggle" aria-label="Change language">
+            <i class="fa fa-language"></i>
+            <span id="current-language">EN</span>
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <ul id="language-options" class="language-options">
+            <li data-lang="en">
+                <span class="flag-icon">🇺🇸</span> English
+            </li>
+            <li data-lang="ru">
+                <span class="flag-icon">🇷🇺</span> Русский
+            </li>
+            <li data-lang="il">
+                <span class="flag-icon">🇮🇱</span> עִברִית
+            </li>
+            <!-- Добавь другие языки по аналогии -->
+        </ul>
+    </div>
+</li>
+	</ul>
+<li id="phone-item"> 
+<a id="header-phone"> <!-- href="tel:+14069672318" -->
+	<i class="fa fa-phone"></i>
+	<span data-i18n="phone">+1-406-967-23-18</span>
+</a>
+</li>
+	</nav>
+</header>
+<main id="main">
+<div id="container">
+<section class="about">
+	<div id="services">
+    <div class="services-container">
+    <h1 id="h1-services" data-i18n="our-services">Our Services</h1>
+    <p id="textplace-text2" data-i18n="desc-services">At Ringdocus Logistics, we provide reliable, secure, and specialized transportation solutions across the United States. With a modern fleet and experienced drivers, we ensure your cargo arrives on time and in perfect condition.</p>
+    <div class="services-grid">
+        <!-- Refrigerated -->
+        <div class="service-card">
+            <div class="service-img-container">
+                <img class="service-img-light" src="./Images/services/refrigerated.webp" alt="Refrigerated Truck">
+                <!-- <img class="service-img-dark" src="./Images/services/reefer-dark.jpg" alt="Refrigerated Truck"> -->
+            </div>
+            <h3 data-i18n="service-reefer">Refrigerated Transport</h3>
+            <ul>
+                <li data-i18n="reefer-1">Temperature-controlled for perishables</li>
+                <li data-i18n="reefer-2">Pharmaceutical & food grade</li>
+                <li data-i18n="reefer-3">24/7 monitoring</li>
+                <button class="card-btn" data-i18n="learn-more">Learn More</button>
+            </ul>
+        </div>
+        
+        <!-- Heavy Haul -->
+        <div class="service-card">
+            <div class="service-img-container">
+                <img class="service-img-light" src="./Images/services/lowboy.webp" alt="Heavy Haul">
+                <!-- <img class="service-img-dark" src="./Images/services/lowboy-dark.jpg" alt="Heavy Haul"> -->
+            </div>
+            <h3 data-i18n="service-heavy">Heavy Haul & Lowboys</h3>
+            <ul>
+                <li data-i18n="heavy-1">Oversized/overweight loads</li>
+                <li data-i18n="heavy-2">Permit acquisition</li>
+                <li data-i18n="heavy-3">Specialized equipment</li>
+                <button class="card-btn" data-i18n="learn-more">Learn More</button>
+            </ul>
+        </div>
+        
+        <!-- Armed Transport -->
+        <div class="service-card">
+            <div class="service-img-container">
+                <img class="service-img-light" src="./Images/services/armored-suburban.webp" alt="Armed Transport">
+                <!-- <img class="service-img-dark" src="./Images/services/armed-dark.jpg" alt="Armed Transport"> -->
+            </div>
+            <h3 data-i18n="service-armed">Armed Security Transport</h3>
+            <ul>
+                <li data-i18n="armed-1">Licensed armed drivers</li>
+                <li data-i18n="armed-2">High-value cargo protection</li>
+                <li data-i18n="armed-3">Available in 20 states</li>
+                <button class="card-btn" data-i18n="learn-more">Learn More</button>
+            </ul>
+
+        </div>
+        <!-- Dry Van -->
+        <div class="service-card">
+            <div class="service-img-container">
+                <img class="service-img-light" src="./Images/services/dryvan.webp" alt="Dry Van">
+                <!-- <img class="service-img-dark" src="./Images/services/#" alt="Dry Van"> -->
+            </div>
+            <h3 data-i18n="service-dry">Dry Van Freight</h3>
+            <ul>
+                <li data-i18n="dry-1">General cargo, boxed goods, and palletized shipments</li>
+                <li data-i18n="dry-2">Fast loading/unloading with dock-high trailers</li>
+                <li data-i18n="dry-3">LTL (Less Than Truckload) & FTL (Full Truckload) options</li>
+                <button class="card-btn" data-i18n="learn-more">Learn More</button>
+            </ul>
+
+        </div>
+        <!-- Cistern Trailer -->
+        <div class="service-card">
+            <div class="service-img-container">
+                <img class="service-img-light" src="./Images/services/tank.webp" alt="Tank Trailer">
+                <!-- <img class="service-img-dark" src="./Images/services/#" alt="Dry Van"> -->
+            </div>
+            <h3 data-i18n="service-cist">Tank Trailers</h3>
+            <ul>
+                <li data-i18n="cist-1">Chemicals & Petrochemicals</li>
+                <li data-i18n="cist-2">We offer stainless steel, aluminum, and specialized tank trailers</li>
+                <li data-i18n="cist-3">Temperature control, hazardous material transport, or dedicated fleet services</li>
+                <button class="card-btn" data-i18n="learn-more">Learn More</button>
+            </ul>
+
+        </div>
+        <!-- Logging Trailer -->
+        <div class="service-card">
+            <div class="service-img-container">
+                <img class="service-img-light" src="./Images/services/logger.webp" alt="Log Trailer">
+                <!-- <img class="service-img-dark" src="./Images/services/#" alt="Dry Van"> -->
+            </div>
+            <h3 data-i18n="service-log">Log Trailers</h3>
+            <ul>
+                <li data-i18n="log-1">Forestry & Logging Operations</li>
+                <li data-i18n="log-2">Whether hauling short logs, long timber, or processed wood, our trailers are adjustable for different load types</li>
+                <li data-i18n="log-3"> Equipped with chains, binders, and stake systems to prevent shifting during transit</li>
+                <button class="card-btn" data-i18n="learn-more">Learn More</button>
+            </ul>
+
+        </div>
+    </div>
+</div>
+</div>
+</section>
+<div id="top-image-2-div">
+
+</div>
+<section class="about">
+	<div class="textplace">
+		<h1 id="h1-about">About Ringdocus Logistics</h1>
+		<p id="textplace-text2">At Ringdocus Logistics, we are more than just a trucking company—we are a committed partner in your supply chain success. Founded with a mission to provide reliable, efficient, and customer-focused transportation solutions, we have built a reputation for excellence in the U.S. logistics industry.</p>
+		<p id="textplace-text2">With years of experience, a modern fleet, and a team of skilled professionals, we ensure that every shipment is handled with the utmost care and precision. Our commitment to safety, punctuality, and transparency sets us apart, making us the preferred choice for businesses that demand dependable freight services.</p>
+		</div>
+</section>
+</div>
+
+<div id="top-image-2-div">
+
+</div>
+<section class="about">
+    <div class="container-fluid">
+        <div class="location-container">
+            <div class="location-text">
+                <h2 data-i18n="our-location">Our Location</h2>
+                <p data-i18n="location-desc">We are conveniently located to serve all your logistics needs. Visit us or get in touch for more information about our services.</p>
+                <address>
+                    <strong data-i18n="address-title">Ringdocus Logistics HQ</strong><br>
+                    <span data-i18n="address-street">Mullan Road</span><br>
+                    <span data-i18n="address-city">Missoula, MT 2965</span><br>
+                    <span data-i18n="address-phone">Phone: +1-406-967-23-18</span>
+                </address>
+            </div>
+            <div class="map-container">
+               <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2601.8946313615165!2d-114.12063979396758!3d46.93665103701448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sru!2sru!4v1744641166719!5m2!1sru!2sru"
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+<div id="wrapper">
+<footer id="footer">
+	<div id="container">
+		<nav id="footer__nav">
+			<ul id="footer__nav-list"> 
+				<li id="footer__nav-item">
+				<p id="footer__nav-title" data-i18n="footer-whoarewe">Who Are We</p>
+					<li id="footer__nav-item"><a id="footer__nav-link" href="./About-Us.html" data-i18n="footer-aboutus">About Us</a></li>
+					<li id="footer__nav-item"><a id="footer__nav-link" href="./error.html" data-i18n="footer-contact">Contact Us</a></li>
+					<li id="footer__nav-item"><a id="footer__nav-link" href="./error.html" data-i18n="footer-gallery">Our Gallery</a></li>
+					<li id="footer__nav-item"><a id="footer__nav-link" href="./error.html"></a></li>
+				</li>
+			</ul>
+			<ul id="footer__nav-list">
+				<li id="footer__nav-item">
+				<p id="footer__nav-title" data-i18n="footer-media">Media</p>
+					<li id="footer__nav-item"><a id="footer__nav-link" href="https://gravatar.com/ringdocuslogistics">Blog (Gravatar)</a></li>
+					<li id="footer__nav-item"><a id="footer__nav-link" href="https://x.com/ringdocus">Twitter (X)</a></li>
+					<li id="footer__nav-item"><a id="footer__nav-link" href="#">Instagram</a></li>
+					<li id="footer__nav-item"><a id="footer__nav-link" href="https://www.linkedin.com">LinkedIn</a></li>
+				</li>
+			 </ul>
+			<ul id="footer__nav-list">
+				<li id="footer__nav-item">
+				<p id="footer__nav-title" data-i18n="footer-partners">Our Partners</p>
+					<li id="footer__nav-item"><a id="footer__nav-link" href="https://www.westernstartrucks.com/">Western Star Trucks</a></li>
+					<li id="footer__nav-item"><a id="footer__nav-link" href="./error.html">Panacea Corp.</a></li>
+					<li id="footer__nav-item"><a id="footer__nav-link" href="./error.html">Gryphon Solutions</a></li>
+					<li id="footer__nav-item"><a id="footer__nav-link" href="./error.html"></a></li>
+				</li>
+			</ul>
+		</nav>
+		<ul id="WoT__item">
+			<li id="WoT">
+			<a id="WoT_link" href="https://www.worldoftrucks.com">
+			<img id="WoT_link-image" src="./Images/WoT.jpg" loading="lazy">
+			</a>
+			</li>
+		</ul>
+		<div id="footer__copyright">
+			<ul>
+		<p id="footer__copyright-text" data-i18n="copyright">
+			All rights reserved. No part of this publication may be reproduced, distributed, or transmitted in any form or by any means, including photocopying, recording, or other electronic or mechanical methods, without the prior written permission of the publisher, except in the case of brief quotations embodied in critical reviews and certain other noncommercial uses permitted by copyright law. For permission requests, please contact the publisher at ringdocuslogistics@gmail.com.
+		</p>
+			</ul>
+		</div>
+	</div>
+</footer>
+</div>
+<script type="text/javascript" src="./js/main.js"></script>
+<script type="text/javascript" src="./js/theme.js"></script>
+<script type="text/javascript" src="./js/language.js"></script>
+</body>
+</html>
