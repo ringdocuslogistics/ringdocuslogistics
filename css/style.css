@@ -1323,7 +1323,7 @@ main {
 /* index3.html */
 /* VARIANT 1*/
 #services {
-	padding-top: 3em;
+	/*padding-top: 3em;*/
 }
 
 #h1-services {
@@ -1336,7 +1336,7 @@ main {
 }
 
 .services-container {
-    padding: 2em 0;
+    padding: 0;
 }
 
 .services-grid {
@@ -1666,4 +1666,14 @@ main {
 
 .dark .falling-icon {
   color: var(--primary-orange); /* можно изменить под ночную тему */
+}
+
+@media (max-width: 480px) {
+  form#quote-form input,
+  form#quote-form select,
+  form#quote-form textarea,
+  form#quote-form button {
+    width: 100%;
+    font-size: 16px;
+  }
 }
