@@ -115,3 +115,10 @@ document.addEventListener('DOMContentLoaded', function() {
         this.classList.remove('pulse');
     });
 });
+
+const target = document.querySelector(".some-element");
+if (!target) {
+  console.warn("Target element not found!");
+} else {
+  observer.observe(target);
+}
