@@ -73,12 +73,11 @@
     <div class="location-container">
      <form action="https://formspree.io/f/xldbkpjl" method="POST" id="quote-form" class="location-text" style="max-width: 700px; margin: auto;">
       	<div id="quote-progress" style="display:none; margin-top: 20px;">
-  	<div style="background:#eee; border-radius:10px; overflow:hidden;">
-    	<div id="progress-bar" style="height:16px; width:0%; background:var(--primary-blue); transition:width 0.3s;">
-    	</div>
-    	
-  	</div>
-  	<p id="progress-text" style="text-align:center; margin-top:5px;" data-i18n="form-processing">Processing your quote...</p>
+  <div style="background:#eee; border-radius:10px; overflow:hidden;">
+    <div id="progress-bar" style="height:16px; width:0%; background:#007bff; transition:width 0.3s;"></div>
+  </div>
+  <p id="progress-text" style="text-align:center; margin-top:5px;">Processing your quote...</p>
+  <div id="spinner" style="display:none; text-align:center; margin-top:10px;">🔄</div>
 </div>
         <!-- Контакт -->
         <label class="label-text" data-i18n="quote-name">Full Name</label><br>
@@ -129,11 +128,7 @@
 
         <button type="submit" id="quote-btn" data-i18n="quote-submit">Submit Request</button>
       </form>
-      <div id="quote-preview" style="display:none; margin-top:30px; border-top:1px solid #ccc; padding-top:15px;">
-  <h3 data-i18n="preview-title">Quote Preview</h3>
-  <pre id="quote-output" style="white-space:pre-wrap; font-family:monospace;"></pre>
-</div>
-    </div>
+
   </section>
 
 
