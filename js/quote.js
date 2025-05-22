@@ -1,7 +1,7 @@
 import * as emailjs from 'https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js';
 
 document.addEventListener("DOMContentLoaded", function () {
-  emailjs.init("cy_vvdmVHN8VwOIbK");
+  emailjs.default.init("cy_vvdmVHN8VwOIbK");
 
   const form = document.getElementById("quote-form");
   const bar = document.getElementById("progress-bar");
