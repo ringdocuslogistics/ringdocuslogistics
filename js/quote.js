@@ -1,4 +1,4 @@
-import emailjs from 'https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js';
+import * as emailjs from 'https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js';
 
 document.addEventListener("DOMContentLoaded", function () {
   emailjs.init("cy_vvdmVHN8VwOIbK"); // 👈 ТВОЙ PUBLIC KEY
