@@ -66,26 +66,73 @@
 <div id="container-career">
 
 
- <section class="about">
-    <h1 style="text-align:center" data-i18n="quote-title">Request a Free Quote</h1>
-    <p style="text-align:center" data-i18n="quote-desc">Let us help you move smarter. Fill in the form and get a custom estimate.</p>
+<section class="about">
+    <h1 style="text-align:center" data-i18n="quote-title">Request a Detailed Quote</h1>
+    <p style="text-align:center" data-i18n="quote-desc">Tell us about your shipment and we'll get back with an accurate estimate.</p>
 
     <div class="location-container">
-      <form id="quote-form" class="location-text">
-        <label class="label-text" for="name" data-i18n="quote-name">Your Name</label><br>
-        <input type="text" id="name" name="name" required><br><br>
+      <form id="quote-form" class="location-text" style="max-width: 700px; margin: auto;">
+      	<div id="quote-progress" style="display:none; margin-top: 20px;">
+  	<div style="background:#eee; border-radius:10px; overflow:hidden;">
+    	<div id="progress-bar" style="height:16px; width:0%; background:var(--primary-blue); transition:width 0.3s;">
+    	</div>
+    	
+  	</div>
+  	<p id="progress-text" style="text-align:center; margin-top:5px;" data-i18n="form-processing">Processing your quote...</p>
+</div>
+        <!-- Контакт -->
+        <label class="label-text" data-i18n="quote-name">Full Name</label><br>
+        <input type="text" name="name" required><br><br>
 
-        <label class="label-text" for="email" data-i18n="quote-email">Email</label><br>
-        <input type="email" id="email" name="email" required><br><br>
+        <label class="label-text" data-i18n="quote-email">Email</label><br>
+        <input type="email" name="email" required><br><br>
 
-        <label class="label-text" for="phone" data-i18n="quote-phone">Phone Number</label><br>
-        <input type="tel" id="phone" name="phone"><br><br>
+        <label class="label-text" data-i18n="quote-phone">Phone</label><br>
+        <input type="tel" name="phone"><br><br>
 
-        <label class="label-text" for="details" data-i18n="quote-details">Describe Your Shipment</label><br>
-        <textarea id="details" name="details" rows="6" required></textarea><br><br>
+        <!-- Груз -->
+        <label class="label-text" data-i18n="quote-cargo-type">Type of Cargo</label><br>
+        <select name="cargo_type" required>
+          <option value="general" data-i18n="cargo-general">General Freight</option>
+          <option value="hazardous" data-i18n="cargo-hazardous">Hazardous Materials</option>
+          <option value="reefer" data-i18n="cargo-reefer">Refrigerated</option>
+          <option value="oversized" data-i18n="cargo-oversized">Oversized / Heavy</option>
+          <option value="logger" data-i18n="cargo-logger">Logger</option>
+        </select><br><br>
 
-        <button type="submit" id="quote-btn" data-i18n="quote-submit">Submit</button>
+        <label class="label-text" data-i18n="quote-weight">Weight (kg)</label><br>
+        <input type="number" name="weight" min="0" required><br><br>
+
+        <label class="label-text" data-i18n="quote-dimensions">Dimensions (L × W × H in cm)</label><br>
+        <input type="text" name="dimensions" placeholder="e.g. 120 × 80 × 150" required><br><br>
+
+        <label class="label-text" data-i18n="quote-service-type">Service Type</label><br>
+        <select name="service-type" required>
+          <option value="ftl" data-i18n="service-ftl">Full Truck Load (FTL)</option>
+          <option value="ltl" data-i18n="service-ltl">Less Than Truck Load (LTL)</option>
+          <option value="express" data-i18n="service-express">Expedited / Express</option>
+        </select><br><br>
+
+        <!-- Адреса -->
+        <label class="label-text" data-i18n="quote-origin">Pickup Address</label><br>
+        <input type="text" name="origin" required><br><br>
+
+        <label class="label-text" data-i18n="quote-destination">Delivery Address</label><br>
+        <input type="text" name="destination" required><br><br>
+
+        <label class="label-text" data-i18n="quote-date">Preferred Pickup Date</label><br>
+        <input type="date" name="pickup_date" required><br><br>
+
+        <!-- Примечания -->
+        <label class="label-text" data-i18n="quote-details">Additional Details</label><br>
+        <textarea name="details" rows="5" placeholder="Any special instructions, customs notes, or conditions"></textarea><br><br>
+
+        <button type="submit" id="quote-btn" data-i18n="quote-submit">Submit Request</button>
       </form>
+      <div id="quote-preview" style="display:none; margin-top:30px; border-top:1px solid #ccc; padding-top:15px;">
+  <h3 data-i18n="preview-title">Quote Preview</h3>
+  <pre id="quote-output" style="white-space:pre-wrap; font-family:monospace;"></pre>
+</div>
     </div>
   </section>
 
@@ -100,8 +147,8 @@
 				<li id="footer__nav-item">
 				<p id="footer__nav-title" data-i18n="footer-whoarewe">Who Are We</p>
 					<li id="footer__nav-item"><a id="footer__nav-link" href="./About-Us.html" data-i18n="footer-aboutus">About Us</a></li>
-					<li id="footer__nav-item"><a id="footer__nav-link" href="./error.html" data-i18n="footer-contact">Contact Us</a></li>
-					<li id="footer__nav-item"><a id="footer__nav-link" href="./error.html" data-i18n="footer-gallery">Our Gallery</a></li>
+					<li id="footer__nav-item"><a id="footer__nav-link" href="./Contact-Us.html" data-i18n="footer-contact">Contact Us</a></li>
+					<li id="footer__nav-item"><a id="footer__nav-link" href="./Gallery.html" data-i18n="footer-gallery">Our Gallery</a></li>
 					<li id="footer__nav-item"><a id="footer__nav-link" href="./error.html"></a></li>
 				</li>
 			</ul>
@@ -144,6 +191,7 @@
 <script type="text/javascript" src="./js/main.js"></script>
 <script type="text/javascript" src="./js/theme.js"></script>
 <script type="text/javascript" src="./js/language.js"></script>
+<script type="module" src="./js/quote.js"></script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

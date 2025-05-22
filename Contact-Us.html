@@ -70,7 +70,7 @@
     <h1 style="text-align:center" data-i18n="contact-title">Get In Touch</h1>
     <p style="text-align:center" data-i18n="contact-description">We’d love to hear from you! Contact us through any of the following methods.</p>
 
-    <div class="div-2-rows">
+<div class="div-2-rows">
       <div class="row-left">
         <div class="location-text">
           <h2><i class="fa fa-map-marker"></i> <span data-i18n="address-title">Headquarters</span></h2>
@@ -78,23 +78,37 @@
         </div>
         <div class="location-text">
           <h2><i class="fa fa-envelope"></i> Email</h2>
-          <p><a href="mailto:info@ringdocuslogistics.com">info@ringdocuslogistics.com</a></p>
+          <p><a href="mailto:info@ringdocuslogistics.com">ringdocuslogistics@gmail.com</a></p>
         </div>
         <div class="location-text">
           <h2><i class="fa fa-phone"></i> <span data-i18n="address-phone">Phone</span></h2>
           <p>+1-406-967-23-18</p>
         </div>
       </div>
-	<div style="margin-top: 2rem;"></div>
+	<div style="margin-left: 2rem;">
       <!-- 3D Анимация вместо карты -->
-      <div class="row-right">
-		
-      </div>
+    	<div class="row-right">
+			<div class="location-text">
+  <h2 data-i18n="contact-hours">Working Hours</h2>
+  <p><strong>Mon – Fri:</strong> 08:00 – 18:00</p>
+  <p><strong>Sat:</strong> 10:00 – 14:00</p>
+  <p><strong>Sun:</strong> Closed</p>
+			</div>
+			<div class="location-text">
+  <h2 data-i18n="social-title">Follow us</h2>
+  <p><a href="https://t.me/ringdocus" target="_blank"><i class="fa fa-telegram"></i> Telegram</a></p>
+  <p><a href="mailto:info@ringdocuslogistics.com"><i class="fa fa-envelope"></i> Email us</a></p>
+  <p><a href="https://x.com/ringdocus" target="_blank"><i class="fa fa-twitter"></i> Twitter / X</a></p>
+  <p><a href="https://linkedin.com" target="_blank"><i class="fa fa-linkedin"></i> LinkedIn</a></p>
+			</div>
+   		</div>
     </div>
+</div>
   </section>
 
 
 </div>
+<div id="falling-icons-container"></div>
 </main>
 <div id="wrapper">
 <footer id="footer">
@@ -104,8 +118,8 @@
 				<li id="footer__nav-item">
 				<p id="footer__nav-title" data-i18n="footer-whoarewe">Who Are We</p>
 					<li id="footer__nav-item"><a id="footer__nav-link" href="./About-Us.html" data-i18n="footer-aboutus">About Us</a></li>
-					<li id="footer__nav-item"><a id="footer__nav-link" href="./error.html" data-i18n="footer-contact">Contact Us</a></li>
-					<li id="footer__nav-item"><a id="footer__nav-link" href="./error.html" data-i18n="footer-gallery">Our Gallery</a></li>
+					<li id="footer__nav-item"><a id="footer__nav-link" href="./Contact-Us.html" data-i18n="footer-contact">Contact Us</a></li>
+					<li id="footer__nav-item"><a id="footer__nav-link" href="./Gallery.html" data-i18n="footer-gallery">Our Gallery</a></li>
 					<li id="footer__nav-item"><a id="footer__nav-link" href="./error.html"></a></li>
 				</li>
 			</ul>
@@ -162,6 +176,30 @@
   }
 }
 </script>
+<script>
+  const iconContainer = document.getElementById("falling-icons-container");
+  const icons = ['fa-phone', 'fa-envelope']; // можно добавить ещё
 
+  function spawnIcon() {
+    const icon = document.createElement("i");
+    const randomIcon = icons[Math.floor(Math.random() * icons.length)];
+    icon.className = `fa ${randomIcon} falling-icon`;
+
+    // Случайная позиция и скорость
+    icon.style.left = Math.random() * 100 + "vw";
+    icon.style.animationDuration = (5 + Math.random() * 5) + "s";
+    icon.style.fontSize = (16 + Math.random() * 24) + "px";
+
+    iconContainer.appendChild(icon);
+
+    // Удалить после окончания анимации
+    setTimeout(() => {
+      icon.remove();
+    }, 10000);
+  }
+
+  // Запуск
+  setInterval(spawnIcon, 800);
+</script>
 </body>
 </html>
